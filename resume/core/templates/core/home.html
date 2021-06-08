@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/img.jpg' %}" alt="ProfilePic"
+             class="img-thumbnail" width="250" height="150">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify ">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height : 2rem;">
+            <p style="text-indent:100px;">
+                I am <b class="text-warning st-font">Sonam Kori</b> having 1 year of Python/Django development experience for global businesses, I offer the technical expertise that you are seeking for your Django developer position. Currently, working as a Associate Analyst at Global Logics, a premier digital engineering and web development firm.
+                After earning my master’s degree in Computer Science from Rajiv Gandhi Technical University, I have served as a Django developer as Freelancer. In that position, I have led Django development projects for clients.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}
